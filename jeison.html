@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>jeison y webservice</title>
+
+    </head>
+<body>
+    <div id="information">
+        <p><h1>Consumo de un webservice con un fetch</h1></p>
+        <input type="text" id="nombrej" value="Charge...">
+        <p></p>
+        <input type="text" id="apellidoj" value="Charge...">
+        <p></p>
+        <p><h1>Consumo de un webservice con json y filtro de datos</h1></p>
+        <select name="filtro" id="search">
+            <option value="p0">Id</option>
+            <option value="p1">Name</option>
+            <option value="p2">UserName</option>
+            <option value="p3">email</option>
+
+            <optgroup label="Address">
+                <option value="p5">Street</option>
+                <option value="p6">suite</option>
+                <option value="p7">City</option>
+                <option value="p8">Zip Code</option>
+                <optgroup label="Geo">
+                    <option value="p9">Lat</option>
+                    <option value="p10">Lng</option>
+                </optgroup>
+            </optgroup>
+            <option value="p11">Phone</option>
+            <option value="p12">Website</option>
+            <optgroup label="Company">
+                <option value="p13">Name</option>
+                <option value="p14">CatchPhrase</option>
+                <option value="p15">BS</option>
+            
+            </optgroup>        
+
+            
+          </select>
+          <button id="view" value="Mostrar" onclick="mostrar()">Mostrar</button>
+    </div>
+    <div id="xml">
+    </div>
+    <form action="page1.html"><button onclick="principal()">Regresar al inicio</button>    </form>
+    </body>
+<script src="webservicejson.js"></script>
+</html>
